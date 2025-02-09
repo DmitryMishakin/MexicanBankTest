@@ -1,0 +1,27 @@
+﻿services:
+  mexicanbanktest:
+    depends_on:
+      - postgres
+    container_name: "bank"
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: MexicanBankTest.Presentation/Dockerfile
+  postgres:
+      image: postgres
+      container_name: "postgres_bank"
+      environment:
+        POSTGRES_DB: "bank_db"
+        POSTGRES_USER: "bank_user"
+        POSTGRES_PASSWORD: "ImNotAnAdmin123"
+        PGDATA: "/var/lib/postgresql/data/pgdata1"
+      ports:
+        - "5432:5432"
+      restart: unless-stopped
+      deploy:
+        resources:
+          limits:
+            cpus: '1'
+            memory: 4G

@@ -1,0 +1,91 @@
+# User-specific files
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider-specific files
+.idea/
+*.iml
+out/
+.idea_modules/
+
+# ASP.NET Core / .NET specific files
+bin/
+obj/
+*.dll
+*.exe
+*.log
+*.sql
+*.sqlite
+*.pdb
+*.cache
+*.mdb
+*.pidb
+*.config
+*.psess
+*.tlog
+*.vspxproj.user
+
+# Logs
+*.log
+
+# Visual Studio Code specific
+.vscode/
+.history/
+
+# Packages
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+project.lock.json
+project.fragment.lock.json
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]64/
+[Aa][Rr][Mm]/
+
+# Runtime files
+*.pid
+
+# Coverage files
+coverage/
+*.coverage
+*.coveragexml
+
+# JetBrains Rider settings and workspace
+.idea/
+.idea_modules/
+.idea/workspace.xml
+.idea/description.html
+.idea/.idea.icls
+.idea/.idea_modules.xml
+
+# Rider caches
+.idea/**/shelf/
+.idea/dictionaries/
+.idea/deployment.xml
+
+# Files created by JetBrains IDEs
+**/.idea/
+**/out/
+**/.idea_modules/
+*.iml
+*.ipr
+
+# Resharper files
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Other files
+*.sln.docstates
+*.userprefs
+
+# Temporary files
+*.tmp
